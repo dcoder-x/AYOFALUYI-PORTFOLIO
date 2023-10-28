@@ -1,0 +1,13 @@
+
+.featured{
+    // width: 100%;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    position: -ms-page;
+    // overflow-x: scroll;
+    .project{
+        width: 100vw;
+    }
+}

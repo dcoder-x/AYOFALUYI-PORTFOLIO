@@ -1,0 +1,194 @@
+// IMPORTS
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+// variables
+
+$text-primary: #b7ab98;
+
+//nav menu
+
+.menu-item,
+.social {
+  .underline {
+    background-color: $text-primary;
+    width: 100%;
+    position: relative;
+    height: 2px;
+    transform: scale(0);
+  }
+  &:hover {
+    // color: #000;
+    .underline {
+      transition: 0.3s ease-in-out;
+      transform: scale(1);
+      z-index: 20;
+    }
+  }
+}
+
+// header
+
+// .header{
+//   // background: linear-gradient(to bottom,rgb(0,0,0,0.4),rgb(0,0,0,0.4));
+//   // box-shadow: black 2px 2px 10px;
+// }
+//hero
+
+.hero {
+  background: linear-gradient(0, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
+    url("../assets/images/front.jpg");
+  background-size: 75%;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+// skills
+
+.skill,
+.history {
+  //   background-color: #000;
+  position: relative;
+  .background {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    align-self: flex-start;
+    left: 0;
+  }
+  .subtext {
+    opacity: 0;
+  }
+  &:hover {
+    .background {
+      width: 100%;
+      transition: 1s ease-in-out;
+      background-color: #39eb8a;
+      z-index: 0;
+    }
+    .subtext {
+      opacity: 1;
+      transition: 1s ease-in-out;
+    }
+    .name {
+      color: black;
+      transition: 0.5s ease-in-out;
+    }
+    // background-color: #b7ab98;
+    transition: 1s ease-in-out;
+  }
+  transition: 0.5s ease-in-out;
+}
+
+//contact
+
+.contact {
+  width: 100%;
+  height: auto;
+  .gospel {
+    // font-family: "Pacifico", cursive;
+    color: #ffffffb6;
+    position: relative;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+// experience
+
+#experience {
+  background: linear-gradient(0, rgb(0, 0, 0, 0.5), #00000066),
+    url("../assets/images/sideview.jpg");
+  background-color: black;
+  background-position: top left;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  // min-height: 50vh;
+}
+
+// contact
+
+.contact {
+  background: linear-gradient(0, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
+    url("../assets/images/smile2.jpg");
+  background-size: 100%;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 500px) {
+  .hero {
+    // background: linear-gradient(0, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("your-portrait-image.jpg");
+    background-size: 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    .hero-text {
+      font-size: 40px;
+    }
+    .lottie {
+      display: none;
+    }
+  }
+  .skill,
+  .history {
+    padding: 4rem 1rem;
+
+    .subtext {
+      display: none;
+    }
+  }
+
+  main {
+    padding: 4rem 0;
+    min-height: 50vh;
+  }
+
+  #experience {
+    background-position: top;
+    background-size: 90%;
+    min-height: 50vh;
+    .summary {
+      width: 90%;
+    }
+  }
+  .gospel {
+    font-size: 1rem !important;
+    padding-bottom: 3rem;
+  }
+
+  .contact {
+    background: none;
+  }
+  footer {
+    backdrop-filter: blur(5px);
+    z-index: 10;
+  }
+  header {
+    backdrop-filter: blur(3px);
+    z-index: 10;
+    height: fit-content;
+    .logo {
+      height: fit-content;
+    }
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 820px) {
+  .hero {
+    // background: linear-gradient(0, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("your-portrait-image.jpg");
+    background-size: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    .hero-text {
+      font-size: 60px;
+    }
+    .lottie {
+      display: none;
+    }
+  }
+}
