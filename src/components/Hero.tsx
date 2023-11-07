@@ -51,7 +51,7 @@ const Hero = (): JSX.Element => {
       <div className="lottie top-0 z-[9] flex items-center opacity-[0.25] justify-center fixed bg-transparent right-0 h-screen">
         <Lottie
           lottieRef={waveRef}
-          className="min-w-[500px]"
+          className="wave min-w-[500px]"
           animationData={wave}
           loop
         />

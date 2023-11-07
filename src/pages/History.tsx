@@ -17,9 +17,21 @@ const History = () => {
     {
       name: "FREELANCER ",
       subtext:
-        " With React native by my side, I can build quality mobile applications. ",
+        " A free bird with no nestw ",
       time: "2021 - PRESENT",
     },
+    // {
+    //   name: "Vedgiland.com ",
+    //   subtext:
+    //     "Contract employment",
+    //   time: "October 2022",
+    // },
+    // {
+    //   name: "Christain Reals",
+    //   subtext:
+    //     "Fullstack Engineer",
+    //   time: "August 2022 - September 2023",
+    // },
   ];
   return (
     <main

@@ -1,6 +1,30 @@
 import React from "react";
+import resume from "../assets/lotties/resume.json";
 import face from "../assets/images/sideview.jpg";
+import Lottie from "lottie-react";
 const Experience = () => {
+
+
+  const stacks = [
+
+    {
+      name:'MongoDB',
+      lottie: resume
+    },
+    {
+      name:'Express JS',
+      lottie: resume
+    },
+    {
+      name:'React',
+      lottie: resume
+    },
+    {
+      name:'NodeJS',
+      lottie: resume
+    },
+
+  ]
   return (
     <main
       id="experience"
@@ -30,6 +54,17 @@ const Experience = () => {
           <strong className=" underline"> working</strong> Experience. I have
           worked As a <strong className=" underline">team member</strong> and{" "}
           <strong className=" underline">freelancer </strong>. "
+        </div>
+        <div className="tech-stacks flex items-center">
+          {
+            stacks.map((stack):JSX.Element =>{
+              return(
+                <li className="m-2">
+                  <Lottie animationData={stack.lottie} width={100} className="w-[30px]"/>
+                </li>
+              )
+              })
+          }
         </div>
       </section>
     </main>
