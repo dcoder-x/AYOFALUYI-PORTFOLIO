@@ -28,7 +28,7 @@ const Contact = () => {
           {socials.map((social): JSX.Element => {
             return (
               <a
-                onClick={e=>{window.open(social.link, "_blank")}}
+                onClick={()=>{window.open(social.link, "_blank")}}
                 data-aos="fade-up"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="500"
