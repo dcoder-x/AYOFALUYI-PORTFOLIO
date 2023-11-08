@@ -51,7 +51,7 @@ const Featured = () => {
               <p className="project-role">{project.role}</p>
             </div>
 
-            <button onClick={e=>window.open(project.url)} className="my-2 border  border-solid border-[#B7AB98] p-2 py-1 sound-button items-center flex rounded-full">
+            <button onClick={()=>window.open(project.url)} className="my-2 border  border-solid border-[#B7AB98] p-2 py-1 sound-button items-center flex rounded-full">
               View site
             </button>
           </section>

@@ -1,6 +1,5 @@
 import robot from "../assets/images/robot.png";
 import mouse from "../assets/images/mouse2.png";
-import { motion } from "framer-motion";
 import '../styles/general.scss'
 
 const Expertise = () => {
