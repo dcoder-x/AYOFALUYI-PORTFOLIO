@@ -4,7 +4,7 @@ import call from "../assets/images/smile2.jpg";
 import Lottie from "lottie-react";
 import resume from "../assets/lotties/resume.json";
 import { socials } from "../Constants/contacts";
-import resumeDoc from "../assets/docs/Resume-2023.docx"
+// import resumeDoc from "../assets/docs/Resume-2023.docx"
 
 const Contact = () => {
 
@@ -57,7 +57,7 @@ const Contact = () => {
             type="button"
             className="text-black cursor-pointer bg-[#39eb8a] rounded p-2"
           >
-            <a href={resumeDoc} download>
+            <a href={require("../assets/docs/Resume-2023.docx")} download>
             Download Resume
 
             </a>
