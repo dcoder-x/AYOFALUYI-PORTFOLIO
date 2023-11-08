@@ -9,7 +9,9 @@ import { AppContext } from "../App"
 import '../styles/general.scss'
 
 const Hero = (): JSX.Element => {
-  const { sound } = useContext(AppContext);
+  const context = useContext(AppContext);
+
+  const sound = context?.sound
 
   useEffect((): void => {
     sound ? waveRef.current?.play() : waveRef.current?.pause();
