@@ -57,7 +57,7 @@ const Contact = () => {
             type="button"
             className="text-black cursor-pointer bg-[#39eb8a] rounded p-2"
           >
-            <a href={require("../assets/docs/Resume-2023.docx")} download>
+            <a href={"../assets/docs/Resume-2023.docx"} download>
             Download Resume
 
             </a>
