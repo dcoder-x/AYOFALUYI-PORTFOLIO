@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import logo from "../assets/images/logo.png";
 import "../App.css";
 import "../styles/general.scss";
-import { motion } from "framer-motion";
 
 const Header = () => {
   const links: Array<{ name: string; link: string }> = [
@@ -58,7 +57,7 @@ const Header = () => {
           );
         })}
       </ul>
-      <div className="hamburger lg:hidden" ref={toggle} onClick={(e) => toggleNav()}>
+      <div className="hamburger lg:hidden" ref={toggle} onClick={() => toggleNav()}>
         <span className="hamburger__patty"></span>
         <span className="hamburger__patty"></span>
         <span className="hamburger__patty"></span>
@@ -67,7 +66,7 @@ const Header = () => {
         {links?.map((link): JSX.Element => {
           return (
             <li
-              onClick={(e) => {
+              onClick={() => {
                 nav.current?.classList.toggle("active");
                 toggle.current?.classList.toggle("active");
               }}

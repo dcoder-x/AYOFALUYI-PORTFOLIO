@@ -27,7 +27,10 @@ const Footer = (): JSX.Element => {
     },
   ];
 
-  const { sound, setSound } = useContext(AppContext);
+  const context = useContext(AppContext);
+
+  const setSound = context?.setSound
+  const sound = context?.sound
   return (
     <footer className="fixed w-full bottom-0 flex items-end z-10 lg:z-1 justify-between p-4 lg:p-[3rem]">
       <div className="social-icons lg:flex hidden flex-col z-10 item-center ">
@@ -44,7 +47,10 @@ const Footer = (): JSX.Element => {
       </div>
       <button
         onClick={() => {
-          setSound(!sound);
+          if (setSound) {
+            setSound(!sound);
+          }
+        
         }}
         className="border z-10  border-solid border-[#B7AB98] self-end justify-self-end p-2 py-1 sound-button items-center flex rounded-full"
       >

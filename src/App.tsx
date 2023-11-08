@@ -2,15 +2,14 @@ import React, { Dispatch, SetStateAction, createContext, useContext, useEffect, 
 import './App.css'
 import LandingPage from './pages/LandingPage'
 import bg_audio from './assets/audio/bg-audio.mp3'
-import { motion } from 'framer-motion'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
 
 export type ContextType = {
-  sound: boolean|null,
-  setSound: Dispatch<SetStateAction<boolean>>
+  sound: boolean,
+  setSound?: Dispatch<SetStateAction<boolean>>
 };
 
 
@@ -58,7 +57,7 @@ function App() {
     >
       <AppContext.Provider value={{ sound, setSound }}>
         <LandingPage />
-        <audio muted={!sound} src={bg_audio} loop autoPlay={true} ref={audioRef} onLoad={e=>forcePlay()} onError={e=>forcePlay() } ></audio>
+        <audio muted={!sound} src={bg_audio} loop autoPlay={true} ref={audioRef} onLoad={()=>forcePlay()} onError={()=>forcePlay() } ></audio>
       </AppContext.Provider>
     </
     >
