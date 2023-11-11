@@ -27,8 +27,6 @@ const Header = () => {
   const toggle = useRef<HTMLDivElement | null>(null);
 
   function toggleNav() {
-    console.log("togglr");
-
     // Show Nav
     nav?.current?.classList.toggle("active");
 
@@ -38,7 +36,7 @@ const Header = () => {
   return (
     <header className=" header flex justify-between w-full lg:px-4 fixed top-0 p-4 lg:p-[3rem] z-10">
       <div className="logo m-0 p-0">
-        <img src={logo} className="max-w-[150px]" alt="" />
+        <img src={logo} className="max-w-[70px]" alt="" />
       </div>
       <ul className="menu lg:flex md:hidden flex-col hidden items-start justify-between">
         {links?.map((link): JSX.Element => {
