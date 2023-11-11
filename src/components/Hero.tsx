@@ -4,7 +4,7 @@ import mouse from "../assets/lotties/mouse.json";
 import paperPlane from "../assets/lotties/paperPlane.json";
 import bulb from "../assets/lotties/bulb.json";
 import wave from "../assets/lotties/wave.json";
-import portrait from "../assets/images/front.jpg";
+import portrait from "../assets/images/front-min.jpg";
 import { AppContext } from "../App"
 import '../styles/general.scss'
 

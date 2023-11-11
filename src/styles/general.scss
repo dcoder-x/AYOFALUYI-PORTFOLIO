@@ -37,7 +37,7 @@ $text-primary: #b7ab98;
 
 .hero {
   background: linear-gradient(0, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
-    url("../assets/images/front.jpg");
+    url("../assets/images/front-min.jpg");
   background-size: 75%;
   background-position: top right;
   background-repeat: no-repeat;
@@ -99,7 +99,7 @@ $text-primary: #b7ab98;
 
 #experience {
   background: linear-gradient(0, rgb(0, 0, 0, 0.5), #00000066),
-    url("../assets/images/sideview.jpg");
+    url("../assets/images/sideview-min.jpg");
   background-color: black;
   background-position: top left;
   background-size: 40%;
@@ -112,7 +112,7 @@ $text-primary: #b7ab98;
 
 .contact {
   background: linear-gradient(0, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
-    url("../assets/images/smile2.jpg");
+    url("../assets/images/smile2-min.jpg");
   background-size: 100%;
   background-position: top left;
   background-repeat: no-repeat;
@@ -142,7 +142,7 @@ $navWidth: 350px;
 $hamburgerSize: 60px;
 @media screen and (max-width: 500px) {
   .hero {
-    // background: linear-gradient(0, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("your-portrait-image.jpg");
+    // background: linear-gradient(0, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("your-portrait-image-min.jpg");
     background-size: 150%;
     background-position: center;
     background-repeat: no-repeat;
@@ -165,7 +165,7 @@ $hamburgerSize: 60px;
 
   main {
     padding: 4rem 0;
-    min-height: 50vh;
+    min-height: 70vh;
   }
 
   #experience {
@@ -326,7 +326,7 @@ $hamburgerSize: 60px;
 
 @media screen and (min-width: 501px) and (max-width: 1000px) {
   .hero {
-    // background: linear-gradient(0, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("your-portrait-image.jpg");
+    // background: linear-gradient(0, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("your-portrait-image-min.jpg");
     background-size: 110%;
     background-position: center;
     background-repeat: no-repeat;

@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 import "../styles/general.scss";
-import call from "../assets/images/smile2.jpg";
+import call from "../assets/images/smile2-min.jpg";
 import Lottie from "lottie-react";
 import resume from "../assets/lotties/resume.json";
 import { socials } from "../Constants/contacts";
@@ -13,7 +13,7 @@ const Contact = () => {
       id="contact"
       className="contact  w-screen lg:p-20 lg:z-3 lg:pl-40 p-4 relative"
     >
-      <section className=" flex z-10 flex-col lg:w-1/2 text-left z-3 relative pb-10">
+      <section className=" flex z-9 flex-col lg:w-1/2 text-left relative pb-10">
         <p
           className="cta text-left lg:text-[50px] my-2"
           data-aos="fade-up-right"
@@ -46,7 +46,7 @@ const Contact = () => {
           })}
         </div>
 
-        <div className="resume my-4 z-10">
+        <div className="resume my-4 lg:z-[10]">
           Resume
           <Lottie
             className="my-2 max-w-[200px] lg:block

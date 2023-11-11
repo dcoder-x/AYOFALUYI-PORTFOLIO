@@ -38,7 +38,7 @@ const Footer = (): JSX.Element => {
           return (
             <a onClick={()=>{window.open(social.link, "_blank")}} className="text-[#B7AB98] relative my-2 no-underline">
               <Icon icon={social.icon} className="icon" width={30} />
-              <p className="hidden absolute bg-[#39eb8a] p-2 rounded top-[-40px]  whitespace-nowrap text-sm text-white my-2 ">
+              <p className="hidden absolute mix-blend-difference bg-[#eb7a39] p-2 rounded top-[-40px]  whitespace-nowrap text-sm text-white my-2 ">
                Go to {social.name} &rarr;
               </p>
             </a>

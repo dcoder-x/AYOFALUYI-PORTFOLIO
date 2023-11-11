@@ -35,7 +35,7 @@ const Expertise = () => {
     },
   ];
   return (
-    <main  id="expertise" className="w-screen flex flex-col items-center justify-center lg:min-h-screen pt-8 bg-black relative">
+    <main  id="expertise" className="w-screen overflow-x-hidden flex flex-col items-center justify-center lg:min-h-screen pt-8 bg-black relative">
       {/* floating Images */}
       <div
         data-aos="fade-up-right"

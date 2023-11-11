@@ -57,12 +57,12 @@ const Header = () => {
           );
         })}
       </ul>
-      <div className="hamburger lg:hidden" ref={toggle} onClick={() => toggleNav()}>
+      <div className="hamburger z-20 lg:hidden " ref={toggle} onClick={() => toggleNav()}>
         <span className="hamburger__patty"></span>
         <span className="hamburger__patty"></span>
         <span className="hamburger__patty"></span>
       </div>
-      <nav className="nav lg:hidden" ref={nav}>
+      <nav className="nav lg:hidden z-10" ref={nav}>
         {links?.map((link): JSX.Element => {
           return (
             <li

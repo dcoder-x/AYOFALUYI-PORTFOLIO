@@ -51,7 +51,7 @@ const History = () => {
         data-aos="zoom-in-right"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="1000"
-        className="floating-img z-10 absolute lg:top-[20%] top-[0%] left-0 lg:max-w-[300px]  max-w-[200px]"
+        className="floating-img  absolute lg:top-[20%] top-[0%] left-0 lg:max-w-[300px]  max-w-[200px]"
       >
         <img
           src={bag}

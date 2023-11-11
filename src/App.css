@@ -16,6 +16,9 @@ main{
   transition: transform 2s ease-in-out;
 }
 
+body{
+  /* overflow-x: hidden; */
+}
 .logo {
   height: 6em;
   padding: 1.5em;

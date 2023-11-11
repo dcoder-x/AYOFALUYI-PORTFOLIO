@@ -1,5 +1,5 @@
 import React from "react";
-import face from "../assets/images/halfFace.jpg";
+import face from "../assets/images/halfFace-min.jpg";
 import Lottie from "lottie-react";
 
 const Download = () => {
